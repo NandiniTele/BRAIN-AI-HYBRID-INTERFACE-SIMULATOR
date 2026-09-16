@@ -1,0 +1,33 @@
+# Neural-Link Backend Dependencies
+# Pinned to stable, Python 3.10+ compatible versions.
+# PyJWT ≥ 2.x returns str from encode(); motor ≥ 3.x uses asyncio natively.
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+websockets>=12.0
+
+# Data / ML
+numpy>=1.26.0
+scipy>=1.13.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+torch>=2.2.0
+pywavelets>=1.6.0
+
+# EEG
+mne>=1.7.0
+
+# Database
+motor>=3.4.0
+pymongo>=4.7.0
+
+# Auth
+PyJWT>=2.8.0
+cryptography>=42.0.0
+
+# Utilities
+psutil>=5.9.0
+
+# Testing
+pytest>=8.0.0
+httpx>=0.27.0
