@@ -18,7 +18,6 @@ import { postSimulate, postTrain, getTrainStatus, getDatasets, type SimulationSe
 import { useRetryRequest } from '../hooks/useRetryRequest';
 
 const ARTIFACTS = ['Ocular (Blink)', 'Muscular (EMG)', '50/60Hz Line', '1/f Noise'] as const;
-const DEFAULT_CHECKED: readonly string[] = ['Ocular (Blink)', '1/f Noise'];
 
 interface SidebarProps {
   isRunning:           boolean;

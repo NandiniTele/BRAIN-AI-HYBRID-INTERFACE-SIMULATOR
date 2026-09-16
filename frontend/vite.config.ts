@@ -15,7 +15,7 @@ const silenceProxyErrors = (proxy: any) => {
   };
 
   // 3. Attach our own silent error handler
-  originalOn('error', (err: any, _req: any, res: any, _target?: any) => {
+  originalOn('error', (_err: any, _req: any, res: any, _target?: any) => {
     if (res && typeof res.writeHead === 'function' && !res.headersSent) {
       res.writeHead(503, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: 'Backend proxy error' }));

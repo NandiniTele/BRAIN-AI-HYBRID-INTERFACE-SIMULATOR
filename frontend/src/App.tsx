@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react'
 import StatusBar from './components/StatusBar';
 import Sidebar from './components/Sidebar';
 import { toast, Toaster } from 'react-hot-toast';
-import { getHealth, WS_URL, type SimulationSettings } from './api';
+import { getHealth, postSimulate, WS_URL, type SimulationSettings } from './api';
 import { useRetryRequest } from './hooks/useRetryRequest';
 
 const Oscilloscope      = lazy(() => import('./components/Oscilloscope'));
